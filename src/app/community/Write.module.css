@@ -1,0 +1,92 @@
+.editorContainer {
+  background: var(--bg-card);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: var(--shadow-sm);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.inputGroup {
+  margin-bottom: 24px;
+}
+
+.label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--text-main);
+}
+
+.select {
+  width: 200px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: var(--bg-main);
+  font-size: 1rem;
+  color: var(--text-main);
+}
+
+.input {
+  width: 100%;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: var(--bg-main);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-main);
+  transition: all 0.2s;
+}
+
+.input:focus, .textarea:focus, .select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(78, 68, 233, 0.1);
+  background: white;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 400px;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: var(--bg-main);
+  font-size: 1rem;
+  line-height: 1.6;
+  resize: vertical;
+  color: var(--text-main);
+  font-family: inherit;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.cancelBtn {
+  padding: 12px 24px;
+  border-radius: 12px;
+  background: transparent;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.submitBtn {
+  padding: 12px 32px;
+  border-radius: 12px;
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  box-shadow: var(--shadow-md);
+  transition: all 0.2s;
+}
+
+.submitBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}

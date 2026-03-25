@@ -1,0 +1,20 @@
+.toggleBtn {
+  font-size: 1.2rem;
+  padding: 8px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-card);
+  border: 1px solid rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-right: 12px;
+}
+
+.toggleBtn:hover {
+  background: var(--bg-main);
+  transform: scale(1.1);
+}

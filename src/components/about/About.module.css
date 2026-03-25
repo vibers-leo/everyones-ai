@@ -1,0 +1,119 @@
+.section {
+  padding: 100px 0;
+  background-color: var(--bg-main);
+}
+
+.intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 100px;
+}
+
+.introTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, var(--text-main) 0%, var(--primary) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.introDesc {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+.missionRow {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 120px;
+}
+
+.missionRow.reverse {
+  flex-direction: row-reverse;
+}
+
+.missionContent {
+  flex: 1;
+}
+
+.missionTitle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--text-main);
+}
+
+.missionText {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.missionVisual {
+  flex: 1;
+  height: 400px;
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.missionVisual::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(45deg, rgba(78,68,233,0.05), rgba(0,210,182,0.05));
+  z-index: 1;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.statItem {
+  text-align: center;
+  padding: 30px;
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.statNumber {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.statLabel {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .missionRow {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  
+  .missionRow.reverse {
+    flex-direction: column;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

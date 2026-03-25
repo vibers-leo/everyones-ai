@@ -1,0 +1,125 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.navContainer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo span {
+  color: var(--text-main);
+}
+
+.navLinks {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.navLink {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-main);
+  position: relative;
+}
+
+.navLink:hover {
+  color: var(--primary);
+}
+
+.loginBtn {
+  margin-left: 20px;
+  background: var(--text-main);
+  color: white;
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
+}
+
+/* Mobile Nav Styles */
+.mobileMenuBtn {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--text-main);
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+  padding: 8px;
+}
+
+.mobileMenu {
+  position: fixed;
+  top: var(--header-height);
+  left: 0;
+  right: 0;
+  background: var(--bg-card);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: var(--shadow-md);
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.mobileMenu.open {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobileLink {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-main);
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  transition: background 0.2s;
+}
+
+.mobileLink:hover {
+  background: var(--bg-main);
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .mobileMenuBtn {
+    display: block;
+    margin-right: 12px;
+  }
+}
