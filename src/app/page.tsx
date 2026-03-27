@@ -1,6 +1,9 @@
 import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/landing/Hero";
-import CoreFeatures from "@/components/landing/CoreFeatures";
+import Features from "@/components/landing/Features";
+import AcademyPreview from "@/components/landing/AcademyPreview";
+import LabPreview from "@/components/landing/LabPreview";
+import CTA from "@/components/landing/CTA";
 import Footer from "@/components/layout/Footer";
 
 export default function Home() {
@@ -8,7 +11,10 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
-      <CoreFeatures />
+      <Features />
+      <AcademyPreview />
+      <LabPreview />
+      <CTA />
       <Footer />
     </main>
   );

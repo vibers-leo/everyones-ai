@@ -1,0 +1,178 @@
+.section {
+  padding: var(--section-gap) 0;
+  background: var(--bg-card);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.header {
+  margin-bottom: 64px;
+}
+
+.label {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+  color: var(--text-main);
+}
+
+/* Bento Grid */
+.bento {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 16px;
+}
+
+.card {
+  background: var(--bg-elevated);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:hover {
+  border-color: var(--border-medium);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+/* 큰 카드: 상단 2개 (2열 중 각각 차지) */
+.cardLarge {
+  grid-column: span 1;
+  padding: 44px;
+}
+
+.cardLarge:first-child {
+  grid-column: 1 / 2;
+}
+
+.cardLarge:nth-child(2) {
+  grid-column: 2 / 4;
+}
+
+.cardSmall {
+  grid-column: span 1;
+}
+
+.cardAccent {
+  background: var(--text-main);
+  color: var(--bg-main);
+  border-color: transparent;
+}
+
+.cardAccent:hover {
+  border-color: transparent;
+  opacity: 0.92;
+}
+
+.cardAccent .cardIcon {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--bg-main);
+}
+
+.cardAccent .cardTitleSmall {
+  color: var(--bg-main);
+}
+
+.cardAccent .cardDescSmall {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.cardIcon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: var(--bg-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  color: var(--text-main);
+  flex-shrink: 0;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 12px;
+  color: var(--text-main);
+}
+
+.cardDesc {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 28px;
+  flex: 1;
+}
+
+.cardAction {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cardAction::after {
+  content: '\2192';
+  transition: transform 0.2s ease;
+}
+
+.card:hover .cardAction::after {
+  transform: translateX(4px);
+}
+
+.cardTitleSmall {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+  color: var(--text-main);
+}
+
+.cardDescSmall {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .bento {
+    grid-template-columns: 1fr;
+  }
+
+  .cardLarge,
+  .cardLarge:first-child,
+  .cardLarge:nth-child(2),
+  .cardSmall {
+    grid-column: 1;
+  }
+
+  .title br {
+    display: none;
+  }
+}
