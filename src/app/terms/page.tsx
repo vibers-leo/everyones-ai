@@ -27,7 +27,7 @@ export default function TermsPage() {
         <section style={{ marginBottom: "40px" }}>
           <h2 style={{ fontSize: "1.5rem", fontWeight: 700, color: "var(--text-main, #111)", marginBottom: "16px" }}>제1조 (목적)</h2>
           <p style={{ fontSize: "1rem", color: "var(--text-sub, #555)", lineHeight: 1.8 }}>
-            본 약관은 계발자들(이하 &quot;회사&quot;)이 운영하는 모두의AI 교육 커뮤니티(이하 &quot;서비스&quot;)를 이용함에 있어 회사와 이용자의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.
+            본 약관은 주식회사 디랩(이하 &quot;회사&quot;)이 운영하는 모두의AI 교육 커뮤니티(이하 &quot;서비스&quot;)를 이용함에 있어 회사와 이용자의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.
           </p>
         </section>
 
@@ -124,7 +124,7 @@ export default function TermsPage() {
           </h3>
           <div style={{ fontSize: "0.875rem", color: "var(--text-sub, #555)" }}>
             <p>이메일: contact@vibers.co.kr</p>
-            <p>운영: 계발자들 (Vibers)</p>
+            <p>운영: 주식회사 디랩 (대표: 이준호, 사업자등록번호: 617-86-11575)</p>
           </div>
         </div>
       </div>
