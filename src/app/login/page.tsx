@@ -100,7 +100,10 @@ export default function LoginPage() {
             <button className={styles.socialBtn} title="Github Login" disabled style={{opacity: 0.5, cursor: 'not-allowed'}}>🐱</button>
           </div>
           
-          <p style={{ marginTop: '30px', fontSize: '0.9rem', color: 'var(--text-muted)' }}>
+          <p style={{ marginTop: '20px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+            <Link href="/forgot-password" style={{ color: 'var(--primary)' }}>비밀번호를 잊으셨나요?</Link>
+          </p>
+          <p style={{ marginTop: '12px', fontSize: '0.9rem', color: 'var(--text-muted)' }}>
             아직 계정이 없으신가요? <Link href="/signup" style={{ color: 'var(--primary)', fontWeight: 'bold', marginLeft: '4px' }}>회원가입</Link>
           </p>
         </div>
