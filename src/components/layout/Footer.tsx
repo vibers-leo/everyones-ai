@@ -42,6 +42,14 @@ const Footer = () => {
               <li><Link href="/about">후원하기</Link></li>
             </ul>
           </div>
+
+          <div>
+            <h4 className={styles.columnTitle}>법적 고지</h4>
+            <ul className={styles.linkList}>
+              <li><Link href="/privacy">개인정보처리방침</Link></li>
+              <li><Link href="/terms">이용약관</Link></li>
+            </ul>
+          </div>
         </div>
 
         <div className={styles.bottom}>
