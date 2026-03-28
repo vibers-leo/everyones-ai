@@ -1,0 +1,15 @@
+# 모두의AI
+> 누구나 AI를 활용해 게임을 만들 수 있도록 돕는 비영리 커뮤니티 플랫폼
+
+## 주요 기능
+- AI 게임 제작 배움터 (아카데미)
+- AI 도구 실험실
+- 커뮤니티 게시판
+- 사용자 게임 쇼케이스 갤러리
+
+## 기술 스택
+- Next.js, Firebase, CSS Modules
+
+## 관련 링크
+- 서비스: https://everyones-ai.vercel.app
+- 계발자들: https://vibers.co.kr

@@ -33,6 +33,24 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "모두의AI",
+              "url": "https://everyones-ai.vercel.app",
+              "description": "누구나 AI를 활용해 게임을 만들 수 있도록 돕는 비영리 커뮤니티 플랫폼",
+              "creator": {
+                "@type": "Organization",
+                "name": "계발자들 (Vibers)",
+                "url": "https://vibers.co.kr"
+              },
+              "inLanguage": "ko"
+            })
+          }}
+        />
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7704550771011130"
