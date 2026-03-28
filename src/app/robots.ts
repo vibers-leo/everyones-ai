@@ -1,12 +1,8 @@
-import { MetadataRoute } from 'next';
+import type { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: {
-      userAgent: '*',
-      allow: '/',
-      disallow: ['/login/', '/signup/', '/mypage/'],
-    },
-    sitemap: 'https://everyones-ai.vibers.co.kr/sitemap.xml',
+    rules: { userAgent: '*', allow: '/' },
+    sitemap: 'https://everyones-ai.vercel.app/sitemap.xml',
   };
 }

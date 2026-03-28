@@ -8,7 +8,20 @@ export const metadata: Metadata = {
   description: "상상이 현실이 되는 게임 세상, AI로 모두가 크리에이터가 되는 곳",
   icons: {
     icon: '/favicon.ico',
-  }
+  },
+  openGraph: {
+    title: "모두의AI - 누구나 AI 게임 크리에이터",
+    description: "상상이 현실이 되는 게임 세상, AI로 모두가 크리에이터가 되는 곳",
+    type: "website",
+    url: "https://everyones-ai.vercel.app",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "모두의AI" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "모두의AI - 누구나 AI 게임 크리에이터",
+    description: "상상이 현실이 되는 게임 세상, AI로 모두가 크리에이터가 되는 곳",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
