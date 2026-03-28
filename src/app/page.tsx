@@ -5,6 +5,7 @@ import AcademyPreview from "@/components/landing/AcademyPreview";
 import LabPreview from "@/components/landing/LabPreview";
 import CTA from "@/components/landing/CTA";
 import Footer from "@/components/layout/Footer";
+import VibersBanner from "@/components/VibersBanner";
 
 export default function Home() {
   return (
@@ -15,6 +16,9 @@ export default function Home() {
       <AcademyPreview />
       <LabPreview />
       <CTA />
+      <div style={{ display: 'flex', justifyContent: 'center', padding: '24px 0' }}>
+        <VibersBanner size="leaderboard" currentProject="everyones-ai" />
+      </div>
       <Footer />
     </main>
   );
