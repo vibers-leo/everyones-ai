@@ -8,6 +8,11 @@
 - Beachhead(고등학생/대학생)의 Burning Pain과 WTP 모두 낮음 → "초급자용 AI 게임 제작 배움터" 포지셔닝 명확화 필수
 - 월 운영비 약 ₩750만(강의 제작 ₩500만 포함) → 스폰서(AI 기업) + 도네이션 + Google AdSense로 조달 필요
 
+### 빌더 공통 지침
+- **gstack 빌더 철학**: 맥미니 루트 `gstack.md` — Boil the Lake, Search Before Building, 스프린트 프로세스
+- **개발 프로세스**: Think → Plan → Build → Review → Test → Ship → Reflect
+- **핵심 규칙**: 테스트 동시 작성, 새 패턴 도입 전 검색, 압축률 기반 추정
+
 ---
 
 # 모두의AI (Everyone's AI)
@@ -146,3 +151,10 @@ const image = await generateAIImage('fun AI-generated game screenshot, pixel art
 ## 상위 브랜드
 - 회사: 계발자들 (Vibers)
 - 모노레포: /Users/juuuno/Desktop/macminim4/dev/nextjs
+
+
+## 세션로그 기록 (필수)
+- 모든 개발 대화의 주요 내용을 `session-logs/` 폴더에 기록할 것
+- 파일명: `YYYY-MM-DD_한글제목.md` / 내용: 한글
+- 세션 종료 시, 마일스톤 달성 시, **컨텍스트 압축 전**에 반드시 저장
+- 상세 포맷은 상위 CLAUDE.md 참조
