@@ -49,7 +49,7 @@ export default function PrivacyPage() {
             <div style={{ marginTop: "16px" }}>
               <p style={{ fontWeight: 700, color: "var(--text-main, #111)" }}>2. 민원 처리</p>
               <ul style={{ listStyle: "disc inside", paddingLeft: "16px", marginTop: "8px" }}>
-                <li>민원인의 신원 확인 및 민원사항 확인</li>
+                <li>민원인의 신원 확인해요 및 민원사항 확인해요</li>
                 <li>처리결과 통보</li>
               </ul>
             </div>
@@ -116,7 +116,7 @@ export default function PrivacyPage() {
             <ol style={{ listStyle: "decimal inside", paddingLeft: "16px", marginTop: "8px" }}>
               <li>개인정보 열람 요구</li>
               <li>오류 등이 있을 경우 정정 요구</li>
-              <li>삭제 요구</li>
+              <li>없애기 요구</li>
               <li>처리정지 요구</li>
             </ol>
             <p style={{ marginTop: "12px" }}>② 제1항에 따른 권리 행사는 서면, 전화, 전자우편 등을 통하여 하실 수 있으며 회사는 이에 대해 지체없이 조치하겠습니다.</p>
@@ -128,7 +128,7 @@ export default function PrivacyPage() {
           <div style={{ fontSize: "1rem", color: "var(--text-sub, #555)", lineHeight: 1.8 }}>
             <p>회사는 개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체없이 해당 개인정보를 파기합니다.</p>
             <ul style={{ listStyle: "disc inside", paddingLeft: "16px", marginTop: "12px" }}>
-              <li>전자적 파일 형태: 복구 및 재생되지 않도록 안전하게 삭제</li>
+              <li>전자적 파일 형태: 복구 및 재생되지 않도록 안전하게 없애기</li>
               <li>종이에 출력된 개인정보: 분쇄기로 분쇄하거나 소각</li>
             </ul>
           </div>

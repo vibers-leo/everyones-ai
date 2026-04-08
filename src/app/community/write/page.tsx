@@ -48,7 +48,7 @@ export default function WritePage() {
       router.push('/community');
     } catch (error) {
       console.error(error);
-      alert('글 작성 중 오류가 발생했습니다. (Firebase 설정을 확인해주세요)');
+      alert('글 작성 중 오류가 발생했습니다. (Firebase 설정을 확인해요해주세요)');
     } finally {
       setIsSubmitting(false);
     }

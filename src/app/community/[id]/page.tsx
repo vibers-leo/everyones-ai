@@ -55,15 +55,15 @@ export default function PostDetailPage({ params }: { params: { id: string } }) {
   }, [user, post, params.id]);
 
   const handleDelete = async () => {
-    if (!confirm("정말 이 글을 삭제하시겠습니까?")) return;
+    if (!confirm("정말 이 글을 없애기하시겠습니까?")) return;
     
     try {
       await CommunityService.deletePost(params.id);
-      alert("삭제되었습니다.");
+      alert("없애기되었습니다.");
       router.push('/community');
     } catch (error) {
       console.error("Delete failed", error);
-      alert("삭제 중 오류가 발생했습니다.");
+      alert("없애기 중 오류가 발생했습니다.");
     }
   };
 
@@ -131,7 +131,7 @@ export default function PostDetailPage({ params }: { params: { id: string } }) {
                     className={styles.btn} 
                     style={{ color: 'red', background: '#fff0f0' }}
                   >
-                    🗑️ 삭제
+                    🗑️ 없애기
                   </button>
                 )}
                 <button 

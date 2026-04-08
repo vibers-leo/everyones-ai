@@ -49,7 +49,7 @@ export default function ForgotPasswordPage() {
                 이메일이 발송되었습니다!
               </p>
               <p style={{ color: "var(--text-muted)", fontSize: "0.9rem", marginBottom: "24px" }}>
-                메일함을 확인해주세요.
+                메일함을 확인해요해주세요.
               </p>
               <Link href="/login" style={{ color: "var(--primary)", fontWeight: "bold" }}>
                 로그인으로 돌아가기

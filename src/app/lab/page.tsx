@@ -7,7 +7,7 @@ const tools: ToolProps[] = [
   {
     id: '1',
     name: "Leonardo.ai",
-    description: "게임 캐릭터와 에셋 생성에 최적화된 AI 이미지 생성 도구입니다. 무료 크레딧을 매일 제공합니다.",
+    description: "게임 캐릭터와 에셋 만들기에 최적화된 AI 이미지 만들기 도구입니다. 무료 크레딧을 매일 제공합니다.",
     category: "Image",
     icon: "🎨",
     url: "https://leonardo.ai",
@@ -16,7 +16,7 @@ const tools: ToolProps[] = [
   {
     id: '2',
     name: "Blockade Labs",
-    description: "360도 파노라마 배경 이미지를 텍스트만으로 생성할 수 있습니다. 스카이박스 제작에 유용합니다.",
+    description: "360도 파노라마 배경 이미지를 텍스트만으로 만들기할 수 있습니다. 스카이박스 제작에 유용합니다.",
     category: "3D/Env",
     icon: "🌍",
     url: "https://skybox.blockadelabs.com",
@@ -25,7 +25,7 @@ const tools: ToolProps[] = [
   {
     id: '3',
     name: "Suno AI",
-    description: "가사만 입력하면 고퀄리티 보컬 곡을 만들어주는 음악 생성 AI입니다. 게임 BGM 제작에 활용해보세요.",
+    description: "가사만 입력하면 고퀄리티 보컬 곡을 만들어주는 음악 만들기 AI입니다. 게임 BGM 제작에 활용해보세요.",
     category: "Music",
     icon: "🎵",
     url: "https://suno.com",
@@ -43,7 +43,7 @@ const tools: ToolProps[] = [
   {
     id: '5',
     name: "Scenario",
-    description: "일관된 스타일의 게임 에셋을 생성할 수 있는 전문적인 툴입니다. 자신만의 모델을 학습시킬 수도 있습니다.",
+    description: "일관된 스타일의 게임 에셋을 만들기할 수 있는 전문적인 툴입니다. 자신만의 모델을 학습시킬 수도 있습니다.",
     category: "Asset Gen",
     icon: "💎",
     url: "https://www.scenario.com",

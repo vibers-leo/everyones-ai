@@ -16,7 +16,7 @@ async function saveToFirestore(lesson: GeneratedLesson) {
     });
     return docRef.id;
   } catch {
-    console.warn("[Firestore] 저장 실패 — Firebase 설정을 확인하세요.");
+    console.warn("[Firestore] 저장 실패 — Firebase 설정을 확인해요해봐요.");
     return null;
   }
 }
@@ -35,7 +35,7 @@ interface Exercise {
   expectedOutput: string;
 }
 
-/** 생성된 레슨 */
+/** 만들기된 레슨 */
 interface GeneratedLesson {
   title: string;
   description: string;
@@ -64,7 +64,7 @@ export default function AdminContentPage() {
   const [lesson, setLesson] = useState<GeneratedLesson | null>(null);
   const [message, setMessage] = useState<{ text: string; type: "success" | "error" } | null>(null);
 
-  // 레슨 생성
+  // 레슨 만들기
   const handleGenerate = async () => {
     if (!topic.trim()) {
       setMessage({ text: "주제를 입력해주세요.", type: "error" });
@@ -85,14 +85,14 @@ export default function AdminContentPage() {
       const data = await res.json();
 
       if (!res.ok) {
-        throw new Error(data.error || "생성 실패");
+        throw new Error(data.error || "만들기 실패");
       }
 
       setLesson(data.data);
-      setMessage({ text: "레슨이 성공적으로 생성되었습니다!", type: "success" });
+      setMessage({ text: "레슨이 성공적으로 만들기되었습니다!", type: "success" });
     } catch (err) {
       setMessage({
-        text: err instanceof Error ? err.message : "레슨 생성 중 오류가 발생했습니다.",
+        text: err instanceof Error ? err.message : "레슨 만들기 중 오류가 발생했습니다.",
         type: "error",
       });
     } finally {
@@ -131,7 +131,7 @@ export default function AdminContentPage() {
       <div className={styles.header}>
         <h1 className={styles.title}>콘텐츠 관리</h1>
         <p className={styles.subtitle}>
-          AI를 활용하여 배움터 레슨을 자동으로 생성하고 관리합니다.
+          AI를 활용하여 배움터 레슨을 자동으로 만들기하고 관리합니다.
         </p>
       </div>
 
@@ -142,9 +142,9 @@ export default function AdminContentPage() {
         </div>
       )}
 
-      {/* 생성 폼 */}
+      {/* 만들기 폼 */}
       <div className={styles.form}>
-        <h2 className={styles.formTitle}>레슨 생성</h2>
+        <h2 className={styles.formTitle}>레슨 만들기</h2>
 
         <div className={styles.fieldGroup}>
           <div className={styles.field}>
@@ -155,7 +155,7 @@ export default function AdminContentPage() {
               id="topic"
               type="text"
               className={styles.input}
-              placeholder="예: AI 이미지 생성, AI 스토리 생성, 게임 레벨 디자인"
+              placeholder="예: AI 이미지 만들기, AI 스토리 만들기, 게임 레벨 디자인"
               value={topic}
               onChange={(e) => setTopic(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && handleGenerate()}
@@ -185,7 +185,7 @@ export default function AdminContentPage() {
           disabled={generating}
         >
           {generating && <span className={styles.loading} />}
-          {generating ? "생성 중..." : "레슨 생성"}
+          {generating ? "만들기 중..." : "레슨 만들기"}
         </button>
       </div>
 
