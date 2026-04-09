@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 // src/app/api/content/generate-lesson/route.ts — AI 레슨 자동 생성 API
 import { NextRequest, NextResponse } from "next/server";
 
